@@ -1,0 +1,88 @@
+.main{
+    background-color: rgb(226, 221, 221);
+    margin-top: 30px;
+    display: flex;
+    .listProduct{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        .product{
+            margin-top: 20px;
+            background-color: white;
+            margin-right: 7%;
+                .productImg{
+                    object-fit:cover;
+                    width: 80%;
+            }
+            
+        .productName{
+            font-size: 16px;
+            text-align: center;
+        }
+        .price{
+            text-align: center;
+            font-size: 14px;
+            padding-top: 4%;
+            color: red;
+        }
+        .foot{
+            padding-top: 6%;
+            padding-bottom: 1%;
+            display: flex;
+            justify-content: space-between;
+            padding-top: 2%;
+            .footLeft{
+                .footIcon{
+                    color: blue;
+                    font-weight: 500;
+                }
+                .footCompany{
+                    font-size: 12px;
+                    color: gray;
+                }
+            }
+            .footRight{
+                .sold{
+                    font-size: 14px;
+                }
+                .footaddress{
+                    font-size: 12px;
+                    color: gray;
+                }
+            }
+        }
+    }
+
+    }
+}
+
+.category{
+    width: 40%;
+    height: 100%;
+    .categoryTitle{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-weight: 700;
+        margin-left: 10%;
+    }
+    .listCategory{
+        display: flex;
+        margin-top: 25px;
+        margin-left: 20%;
+        .pointer{
+            width: 6%;
+        }
+        .listItem{
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        .itemNow{
+            color: red;
+        }
+    }
+}
+li{
+    list-style: none;
+}
